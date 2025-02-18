@@ -41,3 +41,7 @@ Route::get('/articles/{id}', function ($articlesId) {
     return 'Halaman artikel dengan ID ' . $articlesId;
 });
 
+Route::get('/user/{name?}', function ($name=null) {
+    return 'Nama saya ' . $name;
+});
+
