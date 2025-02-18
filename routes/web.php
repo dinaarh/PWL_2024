@@ -69,3 +69,8 @@ Route::resource('photos', PhotoController::class)->only([
 Route::resource('photos', PhotoController::class)->except([
     'create', 'store', 'update', 'destroy'
 ]);
+
+//Praktikum 3
+Route::get('/greeting', function () {
+    return view('hello', ['name' => 'Dina Rahmawati']);
+});
