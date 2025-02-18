@@ -72,5 +72,5 @@ Route::resource('photos', PhotoController::class)->except([
 
 //Praktikum 3
 Route::get('/greeting', function () {
-    return view('hello', ['name' => 'Dina Rahmawati']);
+    return view('blog.hello', ['name' => 'Dina Rahmawati']);
 });
