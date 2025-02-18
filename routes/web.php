@@ -28,3 +28,7 @@ Route::get('/world', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
+Route::get('/user/{name}', function ($name) {
+    return 'Nama saya ' . $name;
+});
